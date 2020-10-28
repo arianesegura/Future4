@@ -1,0 +1,135 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-size: 100%;
+  font-weight: 300;
+}
+
+body {
+  background-color: #ddd;
+  font-size: 62.5%;
+}
+
+/* MENU */
+.menu {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 100%;
+  height: 5vh;
+  float: right;
+  padding: 1% 1%;
+  background-color: rgb(205, 77, 0);
+}
+ul {
+  display: flex;
+}
+
+.menu div a {
+  color: white;
+  font-size: 2vh;
+
+  margin: 20px;
+  text-decoration: none;
+}
+
+.menu div a:hover {
+  color: #ddd;
+}
+
+/* CORPO */
+body {
+  font-family: Arial;
+  margin: 0px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 75vh;
+  width: 100vw;
+  text-align: center;
+  background-color: rgb(89, 95, 150);
+  color: white;
+  font-size: 30px;
+}
+h2 {
+  padding-top: 10%;
+}
+
+img {
+  display: flex;
+  align-self: center;
+  max-width: 80vw;
+}
+
+p {
+  padding-right: 20px;
+  text-align: right;
+  font-size: 21px;
+  font-style: italic;
+}
+
+/* EMAIL-RODAPÉ */
+
+.email-bottom {
+  padding-top: 30px;
+  width: 100vw;
+  height: 20vh;
+  float: left;
+  padding: 2% 4%;
+  text-align: center;
+}
+
+.email {
+  display: inline;
+  width: 25vw;
+  height: 6vh;
+  min-width: 250px;
+  font-size: 16px;
+  line-height: 20px;
+  border: 1px solid grey;
+}
+
+.button {
+  height: 6.1vh;
+  width: 70px;
+  background-color: rgb(205, 77, 0);
+  color: white;
+  font-size: 16px;
+  margin-left: -3px;
+  line-height: 20px;
+  border: 1px solid grey;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  float: left;
+  clear: both;
+}
+
+small {
+  font-size: 17px;
+  color: rgb(205, 77, 0);
+}
+
+@media screen and (max-height: 700px) {
+  img {
+    max-height: auto;
+    max-width: 40%;
+  }
+  h2 {
+    padding-top: 3vh;
+  }
+  .email-bottom {
+    padding-top: 1vh;
+    margin-top: 10px;
+  }
+}
